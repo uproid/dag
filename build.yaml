@@ -1,0 +1,7 @@
+builders:
+  dag:
+    import: "package:dag/builder.dart"
+    builder_factories: ["dagBuilder"]
+    build_extensions: {".dag": [".g.dart"]}
+    auto_apply: root_package
+    build_to: source
