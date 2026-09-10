@@ -1,3 +1,12 @@
+## 0.1.1
+
+- Added `LICENSE` (MIT) and `homepage`/`repository`/`issue_tracker` fields
+  to `pubspec.yaml`, required for `pub.dev` publishing.
+- Shortened the `pubspec.yaml` `description` to fit pub.dev's recommended
+  60-180 character range.
+- Widened dependency constraints (`args`, `build`, `path`, `watcher`,
+  `build_runner`, `lints`, `test`) to their current latest versions.
+
 ## 0.1.0
 
 Initial release.

@@ -25,14 +25,10 @@ Future<String> render({List<String> items = const []}) async {
     _dagLine = 12;
     _buf.write("${item.toUpperCase()}");
     _dagLine = 12;
-    _buf.write("\n    ");
-    _dagLine = 13;
-    throw "sssssssssssss";
-    _dagLine = 13;
     _buf.write("\n");
-    _dagLine = 14;
+    _dagLine = 13;
     }
-    _dagLine = 14;
+    _dagLine = 13;
     _buf.write("\n");
   } catch (e, st) {
     throw DagError("example/dag_layouts/greeting.dag", _dagLine, e, st);

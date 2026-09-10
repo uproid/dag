@@ -10,5 +10,4 @@ Hello worlds the time is: <?dag= DateTime.now() ?>
     for(String item in items){ 
 ?>
     <?dag-= ++i ?>. This is <?dag= item.toUpperCase() ?>
-    <?dag throw "sssssssssssss"; ?>
 <?dag } ?>
