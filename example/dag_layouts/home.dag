@@ -1,0 +1,9 @@
+<?dag-:imports
+import "greeting.g.dart" as greeting;
+-?>
+<?dag-:params [List<String> items = const []] -?>
+
+This page contains:
+<?dag
+    greeting.render(items: items);
+?>

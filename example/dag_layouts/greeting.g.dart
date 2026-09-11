@@ -10,26 +10,28 @@ Future<String> render({List<String> items = const []}) async {
   var _dagLine = 0;
   try {
     _dagLine = 3;
-    _buf.write("\n\n\nHello worlds the time is: ");
-    _dagLine = 6;
+    _buf.write("<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <title></title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link rel=\"stylesheet\" href=\"\">\n    </head>\n    <body>\n        <p>Hello worlds the time is: ");
+    _dagLine = 16;
     _buf.write("${DateTime.now()}");
-    _dagLine = 6;
-    _buf.write("\n\n");
-    _dagLine = 8;
+    _dagLine = 16;
+    _buf.write("</p>\n        <ul>\n        ");
+    _dagLine = 18;
     int i = 0;
-    for(String item in items){
-    _dagLine = 12;
+            for(String item in items){
+    _dagLine = 21;
+    _buf.write("\n            <li>");
+    _dagLine = 22;
     _buf.write("${++i}");
-    _dagLine = 11;
+    _dagLine = 22;
     _buf.write(". This is ");
-    _dagLine = 12;
+    _dagLine = 22;
     _buf.write("${item.toUpperCase()}");
-    _dagLine = 12;
-    _buf.write("\n");
-    _dagLine = 13;
+    _dagLine = 22;
+    _buf.write("</li>\n        ");
+    _dagLine = 23;
     }
-    _dagLine = 13;
-    _buf.write("\n");
+    _dagLine = 23;
+    _buf.write("\n        </ul>\n        \n        <script src=\"\" async defer></script>\n    </body>\n</html>\n");
   } catch (e, st) {
     throw DagError("example/dag_layouts/greeting.dag", _dagLine, e, st);
   }

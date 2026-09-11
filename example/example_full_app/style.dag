@@ -1,0 +1,9 @@
+<?dag-:params [List<String> args = const []] -?>
+<?dag-:name main -?>
+<?dag- var longest = args.fold("", (prev, e) => e.length > prev.length ? e : prev); -?>
+
+┌<?dag-= "─" * (longest.length + 2) ?>┐
+<?dag for(var arg in args){ -?>
+    │ <?dag= arg ?><?dag= " " * (longest.length - arg.length) ?> │
+<?dag } -?>
+└<?dag-= "─" * (longest.length + 2) -?>┘
