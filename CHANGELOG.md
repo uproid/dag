@@ -1,3 +1,13 @@
+## 0.1.2
+
+- Added more examples: a multi-file layout example
+  (`example/dag_layouts/`) and a fuller app example
+  (`example/example_full_app/`).
+- README now points to the
+  [FinchDart DAG](https://marketplace.visualstudio.com/items?itemName=uproid.finchdart-dag)
+  VS Code extension for syntax highlighting and inline error reporting in
+  `.dag` files.
+
 ## 0.1.1
 
 - Added `LICENSE` (MIT) and `homepage`/`repository`/`issue_tracker` fields

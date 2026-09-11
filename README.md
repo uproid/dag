@@ -6,6 +6,13 @@ a `.php` file has to PHP. **This is not a template engine**: nothing is
 interpreted at runtime. `dag` only rewrites `.dag` source into equivalent
 `.dart` source, which you then compile/run normally.
 
+## VS Code extension
+
+For syntax highlighting of embedded Dart code and inline error reporting
+in `.dag` files, install the
+[FinchDart DAG](https://marketplace.visualstudio.com/items?itemName=uproid.finchdart-dag)
+extension from the VS Code Marketplace.
+
 ## Tags
 
 | Tag | Meaning |

@@ -1,3 +1,7 @@
+/// Full app example using the `style` module.
+/// See the source on GitHub:
+/// https://github.com/uproid/dag/blob/main/example/example_full_app/style.dag
+
 import 'style.g.dart' as style;
 
 void main() async {

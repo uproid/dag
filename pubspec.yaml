@@ -2,7 +2,7 @@ name: dag
 description: >
   Transpiles .dag files (text with embedded Dart, PHP-style) into plain
   .dart source. Not a template engine — the .dag file IS Dart code.
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/uproid/dag
 repository: https://github.com/uproid/dag
 issue_tracker: https://github.com/uproid/dag/issues
