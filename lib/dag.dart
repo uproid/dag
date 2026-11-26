@@ -11,6 +11,8 @@ library;
 
 import 'dart:io';
 
+import 'package:path/path.dart' as p;
+
 export 'src/dag_error.dart' show DagError;
 export 'src/transpiler.dart' show transpile;
 
@@ -23,12 +25,20 @@ import 'src/transpiler.dart' show transpile;
 Future<String> transpileFile(String input, {String? output}) async {
   final inputFile = File(input);
   final source = await inputFile.readAsString();
-  final dart = transpile(source, sourcePath: input);
+  final dart = transpile(source, sourcePath: _displayPath(input));
   final outPath = output ?? _defaultOutputPath(input);
   final outFile = File(outPath);
   await outFile.parent.create(recursive: true);
   await outFile.writeAsString(dart);
   return outPath;
+}
+
+/// Path of [input] relative to the current working directory (the project
+/// root), using `/` separators so generated files don't embed absolute,
+/// machine-specific paths.
+String _displayPath(String input) {
+  final relative = p.relative(p.absolute(input));
+  return p.split(relative).join('/');
 }
 
 String _defaultOutputPath(String input) {

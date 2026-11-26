@@ -1,3 +1,8 @@
+
+## 0.1.3
+
+- Improved error messages for better debugging experience.
+
 ## 0.1.2
 
 - Added more examples: a multi-file layout example
